@@ -1,0 +1,49 @@
+E-commerce sales dashboard
+April 2018 to March 2019
+
+Open the interactive Power BI report
+1. Extract the entire ZIP into one folder on your Windows computer.
+2. Open Ecommerce.pbip in a current version of Power BI Desktop.
+3. Select Home > Refresh to load the supplied data, then save. To create a
+   single .pbix file, choose File > Save as and select the .pbix format.
+
+Leave SourceFolder empty for the first refresh. Both original inputs are
+embedded in the project, so you can move it between computers. If your version
+of Desktop lists Power BI projects under File > Options and settings > Options
+> Preview features, enable the project option and restart Desktop.
+
+Use the report
+Sales performance compares sales, profit and target attainment. Choose a
+month or category, or select a point on a chart to explore its contribution.
+Category targets shows the size of the shortfall. Parentheses mean negative.
+
+Markets and products ranks states by sales. The city table starts with the
+highest-sales cities. The product table starts with the lowest-profit product
+groups. Use the state, month and category filters to explore a market.
+The filter selections on the two pages are independent.
+
+Overview.png shows the full-period figures before filters.
+
+How the measures work
+- Total sales and net profit sum the recorded Sale and Profit columns.
+  Amounts use the source units. The input workbook gives no currency code.
+- Profit margin divides net profit by total sales in the current selection.
+- Sales target sums the 36 category-month targets in Sales target.csv.
+  Month and category filter both orders and targets through shared tables.
+  The order workbook also contains a Target column at a different level
+  of detail. The report uses the monthly CSV as the planning source.
+- Target attainment divides total sales by the matching sales target.
+  Gap to target subtracts the sales target from total sales. Targets are
+  available at month and category level. A direct order-table filter
+  (for example, state or city) leaves the target measures blank.
+- Orders counts distinct order IDs. Avg order value divides sales by orders.
+  Units sold adds quantities. Loss-making orders counts distinct orders
+  whose combined profit is below zero in the current selection.
+
+Refresh with updated source files
+Place E-commerce dataset.xlsx and Sales target.csv together in a folder.
+Keep the original filenames and headers, keep the Excel worksheet named
+Sheet1, and use dd-MM-yyyy dates in the target CSV. Keep a single target
+per month and category. In Power BI Desktop, open Home > Transform data >
+Edit parameters, set SourceFolder to that folder and refresh. Clear
+SourceFolder to return to the original embedded inputs.

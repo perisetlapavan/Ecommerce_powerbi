@@ -1,0 +1,39 @@
+{
+  "name": "Ecommerce performance",
+  "dataColors": [
+    "#007F78",
+    "#B6712F",
+    "#4F7896",
+    "#A84E48",
+    "#789669",
+    "#806D9B"
+  ],
+  "foreground": "#163A40",
+  "background": "#FFFFFF",
+  "tableAccent": "#007F78",
+  "good": "#007F78",
+  "neutral": "#B6712F",
+  "bad": "#AF4B43",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI",
+      "color": "#163A40",
+      "fontSize": 13
+    },
+    "header": {
+      "fontFace": "Segoe UI",
+      "color": "#163A40",
+      "fontSize": 12
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "color": "#163A40",
+      "fontSize": 10
+    },
+    "callout": {
+      "fontFace": "Segoe UI",
+      "color": "#163A40",
+      "fontSize": 30
+    }
+  }
+}
